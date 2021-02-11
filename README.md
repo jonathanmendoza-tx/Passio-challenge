@@ -8,7 +8,7 @@ Implemented a version of the MobileNetV2 convolutional neural network for image 
 
 ## Project Overview
 
-Used TensorFlow Keras pretrained MobileNetV2 for binary image classification. With a few tweaks, this model could be used for multiclass classification. MobileNetV2 was modified to allow for an output layer which is L2-normalized. After 10 Epochs, the model was about 98% accurate for the validation set.
+Used TensorFlow Keras pretrained MobileNetV2 for binary image classification. With a few tweaks, this model could be used for multiclass classification. MobileNetV2 was modified to allow for an output layer which is L2-normalized. After 10 Epochs, the model was about 98% accurate for the validation set. Model and model weights are saved to model directory.
 
 ### Tech Stack
 
@@ -32,22 +32,22 @@ Image dataset (zip file):
 
 Docker is suggested to run this application, but, model.py can be run without Docker, if necessary.
 
-With Docker:
-    - create a directory to bind your volume to
-    - build docker image from Dockerfile
-    - run container
+#### With Docker:
+
+   - create a directory to bind your volume to
+   - build docker image from Dockerfile
+   - run container
     
     mkdir challenge
 
     docker build . -t challenge && docker run challenge -v ~/challenge:/model/
 
 
-without Docker:
-    - Must have tensorflow installed, Python 3.6+
-    - run model.py
-    
+#### Without Docker:
+   - Must have tensorflow installed, Python 3.6+
+   - run model.py
 
-     python model.py
+    python model.py
 
 
 
