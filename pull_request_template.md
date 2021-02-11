@@ -19,8 +19,6 @@ Please delete options that are not relevant.
 
 # How Has This Been Tested?
 
-- [ ] Test A
-- [ ] Test B
 
 # Checklist
 
