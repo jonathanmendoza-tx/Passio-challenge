@@ -10,4 +10,4 @@ RUN apt-get update && apt-get install -y curl
 
 ENV LANG C.UTF-8
 
-CMD [ "python", "./model/model.py"]
+CMD [ "python", "model.py"]

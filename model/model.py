@@ -92,7 +92,7 @@ history = model.fit(train_dataset,
 
 # save model - serialize weights to HDF5
 model_json = model.to_json()
-with open("./model/model.json", "w") as json_file:
+with open("model.json", "w") as json_file:
 	json_file.write(model_json)
-	model.save_weights("./model/weights.h5")
+	model.save_weights("weights.h5")
 	print(f'Model weights saved.')
